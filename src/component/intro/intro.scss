@@ -1,0 +1,120 @@
+.intro-section {
+  background: #6452d1;
+  width: 100%;
+  min-height: 29.313rem;
+
+  .intro-box {
+    max-width: 90rem;
+    margin: auto;
+
+    .intro-content {
+      display: flex;
+      padding-top: 10.63rem;
+
+      .intro-left {
+        width: 50%;
+        position: relative;
+
+        .intro-img {
+          position: absolute;
+          top: -1.25rem;
+          left: 6.25rem;
+          z-index: 2;
+
+          .intro-chk-img {
+            position: absolute;
+            top: 0.94rem;
+            right: 0.25rem;
+            z-index: 2;
+          }
+        }
+
+        .intro-blur {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          height: 21.813rem;
+          width: 21.813rem;
+          background: #fbb5f0;
+          border-radius: 50%;
+          filter: blur(150px);
+          z-index: 0;
+        }
+      }
+      .intro-right {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+
+        span {
+          font-family: "Montserrat", sans-serif;
+          font-size: 2.5rem;
+          font-weight: 800;
+          line-height: 3.75rem;
+          text-align: left;
+          color: #ffffff;
+        }
+        p {
+          font-family: "Karla", sans-serif;
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.55;
+          text-align: left;
+          color: #ffffff;
+          width: 23.75rem;
+          min-height: 5.94rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 81.25em) {
+  /* For Tab-land 81.25em= 1300px/16px */
+  html {
+    /* font-size: 56.25%; */
+  }
+  .intro-section .intro-box .intro-content {
+    padding-top: 8.63rem;
+  }
+  .intro-section .intro-box .intro-content .intro-left .intro-img {
+    transform: scale(0.9);
+    top: -1rem;
+    left: -3rem;
+  }
+  .intro-section
+    .intro-box
+    .intro-content
+    .intro-left
+    .intro-img
+    .intro-chk-img {
+    transform: scale(0.9);
+    right: 3rem;
+  }
+}
+@media (max-width: 56.25em) {
+  /* For Tab-port  56.25em= 900px/16px */
+  html {
+    /* font-size: 50%; */
+  }
+  .intro-section .intro-box .intro-content {
+    justify-content: center;
+  }
+  .intro-section .intro-box .intro-content .intro-left {
+    display: none;
+  }
+  .intro-section .intro-box .intro-content .intro-right {
+    width: 70%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  /* For phone 37.5em= 600px/16px */
+  html {
+    /* font-size: 31.25%; */
+  }
+
+  .intro-section .intro-box .intro-content .intro-right p {
+    width: 90%;
+  }
+}

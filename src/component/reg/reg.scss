@@ -1,0 +1,177 @@
+.reg-page {
+  max-width: 90rem;
+  margin: auto;
+
+  .reg-box {
+    display: flex;
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
+    margin-bottom: 11.25rem;
+
+    .reg-left {
+      width: 50%;
+
+      .reg-img {
+        transform: translate(-11.25rem, 12.5rem);
+      }
+    }
+
+    .reg-right {
+      width: 50%;
+      form {
+        margin-top: 3rem;
+        height: 40rem;
+        width: 33.813rem;
+        border-radius: 1rem;
+        box-shadow: 0px 4px 44px 0px #6452d14d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .f-cont {
+          padding: 0.5rem;
+          width: 20.11rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .f-icon {
+            width: 4.563rem;
+            height: 4.563rem;
+            & > img {
+              width: 4.563rem;
+              height: 4.563rem;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+          }
+          .f-hd {
+            font-family: "Montserrat", sans-serif;
+            font-size: 1.313rem;
+            font-weight: 800;
+            line-height: 3.688rem;
+            color: #6452d1;
+            text-align: center;
+          }
+          .f-sub {
+            font-family: "Karla", sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.123rem;
+            color: #000;
+            text-align: center;
+          }
+          .f-input {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin-top: 1.88rem;
+
+            input {
+              width: 100%;
+              padding: 1rem 1.25rem 1rem 2.5rem;
+              box-sizing: border-box;
+              border: none;
+              border-bottom: hsl(249, 58%, 57%) solid 1.76px;
+              font-family: "Karla", sans-serif;
+              font-size: 1rem;
+              font-weight: 500;
+              line-height: 1.125rem;
+              text-align: left;
+              color: #6452d1;
+
+              &:focus {
+                outline: none;
+              }
+              &::placeholder {
+                font-family: "Karla", sans-serif;
+                font-size: 1rem;
+                font-weight: 500;
+                line-height: 1.125rem;
+                text-align: left;
+                color: #6452d1;
+              }
+            }
+            img {
+              position: absolute;
+              top: 50%;
+              left: 0;
+              transform: translateY(-50%);
+            }
+          }
+          .btn {
+            margin-top: 3.125rem;
+            button {
+              width: 20.11rem;
+              margin-top: 1.31rem;
+              &:hover {
+                box-shadow: 0px 4px 44px 0px #6452d14d;
+              }
+            }
+            .g-button {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 0.313rem;
+              font-family: "Karla", sans-serif;
+              font-size: 1.125rem;
+              font-weight: 700;
+              line-height: 1.81rem;
+              background-color: #ffffff;
+              color: rgb(100, 82, 209);
+              border: 1.76px solid #6452d1;
+              height: 2.813rem;
+              border-radius: 0.625rem;
+              padding: 0.5rem 2.5rem;
+              text-align: center;
+              cursor: pointer;
+              transition: all ease-in-out 0.2ms;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 75em) {
+  /* For Tab-land  75em= 1200px/16px */
+  html {
+    /* font-size: 56.25%; */
+  }
+  .reg-page .reg-box {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 0rem;
+  }
+  .reg-page .reg-box .reg-left .reg-img {
+    transform: translate(-7rem, 6.5rem) scale(0.9);
+  }
+  .reg-page .reg-box .reg-right {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 56.25em) {
+  /* For Tab-port  56.25em= 900px/16px */
+  html {
+    /* font-size: 50%; */
+  }
+  .reg-page .reg-box {
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+  .reg-page .reg-box .reg-left {
+    display: none;
+  }
+  .reg-page .reg-box .reg-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  /* For phone 37.5em= 600px/16px */
+  html {
+    /* font-size: 31.25%; */
+  }
+}

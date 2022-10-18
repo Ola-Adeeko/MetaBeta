@@ -1,0 +1,351 @@
+.platform {
+  max-width: 90rem;
+  margin: auto;
+  box-sizing: border-box;
+
+  .plat-box {
+    padding-left: 7.5rem;
+    padding-right: 11.25rem;
+
+    .platform-headers {
+      width: 100%;
+      max-height: 4.625rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+
+      & > img {
+        width: 100%;
+      }
+    }
+    .seamless {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .s-left {
+        max-width: 50%;
+
+        img {
+          transform: translateX(-7.125rem);
+        }
+      }
+
+      .s-right {
+        max-width: 31.75rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.938rem;
+
+        .s-right-hd {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          text-align: left;
+
+          & > :nth-child(1),
+          & > :nth-child(2) {
+            font-family: "Montserrat", sans-serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 4rem;
+            color: #212121;
+          }
+          & > :nth-child(3) {
+            font-family: "Montserrat", sans-serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 4rem;
+            color: #6452d1;
+          }
+        }
+
+        & > :nth-child(2) {
+          font-family: "Karla", sans-serif;
+          font-size: 1.125rem;
+          font-weight: 400;
+          line-height: 1.8rem;
+          color: #212121;
+          text-align: left;
+        }
+      }
+    }
+    .packages {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-top: 6.25rem;
+      margin-bottom: 6.25rem;
+
+      .p-left {
+        // transform: translateY(-50px);
+        display: flex;
+        flex-direction: column;
+        gap: 1.375rem;
+        align-items: flex-start;
+
+        .p-left-hd {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          & > :nth-child(1),
+          & > :nth-child(2),
+          & > :nth-child(3) {
+            font-family: "Montserrat", sans-serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 4rem;
+            color: #212121;
+          }
+          & > :nth-child(4) {
+            font-family: "Montserrat", sans-serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 4rem;
+            color: #6452d1;
+          }
+        }
+        & > :nth-child(2) {
+          font-family: "Karla", sans-serif;
+          font-size: 1.125rem;
+          font-weight: 400;
+          line-height: 1.8rem;
+          color: #212121;
+          text-align: left;
+          width: 29.438rem;
+          height: 7.875rem;
+        }
+      }
+      .p-right {
+        width: 31.25rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2.188rem;
+
+        & > * {
+          width: 45%;
+        }
+      }
+    }
+    .plans {
+      margin-top: 9.375rem;
+      margin-bottom: 12.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4.75rem;
+      position: relative;
+
+      .dot-left {
+        position: absolute;
+        top: -9.375rem;
+        left: -9.375rem;
+      }
+      .dot-right {
+        position: absolute;
+        top: -3.75rem;
+        right: -11.875rem;
+      }
+
+      .plans-head {
+        display: flex;
+        flex-direction: column;
+        width: 37.188rem;
+        gap: 0.625rem;
+
+        & > :nth-child(1) {
+          font-family: "Montserrat", sans-serif;
+          font-size: 2.5rem;
+          font-weight: 800;
+          line-height: 4rem;
+          color: #212121;
+        }
+        & > :nth-child(2) {
+          font-family: "Montserrat", sans-serif;
+          font-size: 2.5rem;
+          font-weight: 800;
+          line-height: 4rem;
+          color: #6452d1;
+        }
+        & > :nth-child(3) {
+          margin-top: 1.25rem;
+          font-family: "Karla", sans-serif;
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.6rem;
+          color: #212121;
+          text-align: center;
+        }
+      }
+      .plans-card {
+        width: 100%;
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+@media (max-width: 75em) {
+  /* For Tab-land  75em= 1200px/16px */
+  html {
+    /* font-size: 56.25%; */
+  }
+  .platform {
+    width: 100%;
+
+    .plat-box {
+      padding-left: 1rem;
+      padding-right: 1rem;
+
+      .seamless .s-left {
+        width: 50%;
+        overflow: hidden;
+
+        img {
+          transform: translateX(-7.5rem);
+        }
+      }
+      .seamless .s-right {
+        max-width: 50%;
+      }
+      .packages .p-right {
+        gap: 1rem;
+      }
+      .plans .dot-right {
+        right: 0rem;
+      }
+      .plans .plans-card {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+      }
+    }
+  }
+}
+@media (max-width: 56.25em) {
+  /* For Tab-port  56.25em= 900px/16px */
+  html {
+    /* font-size: 50%; */
+  }
+
+  .platform .plat-box .seamless {
+    margin-top: 3rem;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .platform .plat-box .seamless .s-left img {
+    transform: scale(1.4) translateX(-1rem);
+    width: 100%;
+  }
+
+  .platform .plat-box .seamless .s-right {
+    max-width: 70vw;
+    text-align: center;
+    align-items: center;
+  }
+  .platform .plat-box .seamless .s-right .s-right-hd {
+    width: 90vw;
+    text-align: center;
+    align-items: center;
+  }
+  .platform .plat-box .seamless .s-right > :nth-child(2) {
+    text-align: center;
+  }
+
+  .platform .plat-box .packages {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 3rem;
+  }
+  .platform .plat-box .packages .p-left {
+    align-items: center;
+  }
+  .platform .plat-box .packages .p-left .p-left-hd {
+    align-items: center;
+  }
+  .platform .plat-box .packages .p-left > :nth-child(2) {
+    text-align: center;
+  }
+  .platform .plat-box .plans {
+    margin-bottom: 5rem;
+  }
+  .platform .plat-box .plans .dot-left {
+    top: -7.35rem;
+    opacity: 0.5;
+  }
+  .platform .plat-box .plans .dot-right {
+    opacity: 0.5;
+    right: 0rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  /* For phone 37.5em= 600px/16px */
+  html {
+    font-size: 70%;
+  }
+
+  .platform .plat-box .seamless .s-right {
+    max-width: 90vw;
+    text-align: center;
+    align-items: center;
+  }
+
+  .platform .plat-box .packages {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 3rem;
+  }
+  .platform .plat-box .packages .p-right {
+    width: 90vw;
+    justify-content: center;
+  }
+  .platform .plat-box .packages .p-left {
+    align-items: center;
+    width: 90vw;
+    & > :nth-child(2) {
+      width: 90vw;
+    }
+  }
+  .platform .plat-box .packages .p-left .p-left-hd {
+    align-items: center;
+  }
+
+  .platform .plat-box .packages .p-left > :nth-child(2) {
+    height: fit-content;
+    text-align: center;
+  }
+  .platform .plat-box .plans .plans-head {
+    width: 90vw;
+  }
+  .platform .plat-box .plans .dot-left {
+    display: none;
+  }
+  .platform .plat-box .plans .plans-head > :nth-child(1),
+  .platform .plat-box .plans .plans-head > :nth-child(2) {
+    line-height: 3rem;
+  }
+  .platform .plat-box .plans {
+    margin-bottom: 5rem;
+  }
+  .platform .plat-box .plans .plans-card {
+    z-index: 5;
+  }
+
+  .platform .plat-box .plans .dot-left {
+    top: -7.35rem;
+    opacity: 0.5;
+  }
+  .platform .plat-box .plans .dot-right {
+    opacity: 0.5;
+    right: 0rem;
+  }
+}

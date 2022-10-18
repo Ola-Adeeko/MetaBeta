@@ -1,0 +1,43 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.875rem;
+  font-family: "Karla", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.813rem;
+  color: #ffffff;
+  background-color: #6452d1;
+  border: none;
+  height: 2.813rem;
+  border-radius: 0.625rem;
+  padding: 0.5rem 2.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all ease-in-out 0.2ms;
+
+  &:hover {
+    background-color: #463c86;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 15px;
+  }
+}
+.inverted {
+  font-family: "Karla", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.813rem;
+  background-color: #ffffff;
+  color: rgb(100, 82, 209);
+  border: none;
+  height: 2.813rem;
+  border-radius: 0.625rem;
+  padding: 0.5rem 2.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all ease-in-out 0.2ms;
+
+  &:hover {
+    box-shadow: 0 5px 15px rgba(226, 225, 230, 0.4);
+  }
+}
